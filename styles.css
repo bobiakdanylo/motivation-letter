@@ -1,0 +1,120 @@
+/* -----------------------------------------> GLOBAL <------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --title-font: 'Roboto', sans-serif;
+    --text-font: 'Roboto Flex', sans-serif;
+}
+
+/* -----------------------------------------> MAIN <------------------------------------------- */
+
+.main {
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 830px;
+    min-height: 200px;
+    height: 100%;
+    margin: 70px auto 0 auto;
+    padding: 10px 20px;
+    background-color: #eff2f9;
+}
+
+/* -----------------------------------------> TITLE <------------------------------------------- */
+
+.title {
+    border-bottom: 1px solid rgb(169, 169, 169);
+}
+
+.title__name {
+    text-align: left;
+    font-family: var(--title-font);
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.title__position {
+    font-family: var(--title-font);
+    font-weight: 500;
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+/* -----------------------------------------> LETTER <------------------------------------------- */
+
+.info-blocks {
+    display: flex;
+    margin-top: 5px;
+}
+
+.letter {
+    width: 70%;
+    padding-right: 10px;
+}
+
+.letter {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 5px;
+    gap: 10px;
+}
+
+.letter__text {
+    font-family: var(--text-font);
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.letter__link {
+    color: black;
+    text-decoration: underline;
+}
+
+/* -----------------------------------------> CONTACTS <------------------------------------------- */
+
+.contacts {
+    border-left: 1px solid rgb(169, 169, 169);
+}
+
+.contacts__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0 20px 20px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    color: black;
+    font-family: var(--text-font);
+    font-weight: 400;
+    max-width: max-content; 
+}
+
+.contact:hover {
+    text-decoration: underline;
+}
+
+.contact__svg {
+    fill: rgb(59, 115, 193);
+}
